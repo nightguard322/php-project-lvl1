@@ -1,4 +1,295 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-"make.exe" �� ���� ����७��� ��� ���譥�
-��������, �ᯮ��塞�� �ணࠬ��� ��� ������ 䠩���.
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Apr 04 15:01:36 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\Sasha
+# environment
+AMDAPPSDKROOT = C:\Program Files (x86)\AMD APP\
+# environment
+LOCALAPPDATA = C:\Users\Sasha\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-04c609a5-aa5f-4b43-89df-d7c1100e993b-sock
+# environment
+VSCODE_CWD = C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\Windows
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_464_NPWWGUVEIFEYZLBU
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Sasha\AppData\Roaming\Code\CachedData\e18005f0f1b33c29e81d732535d8c0e47cafb0b5
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\Sasha\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\Sasha\OneDrive
+# makefile
+CURDIR := c:/xampp/htdocs/hexletp1
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 464
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"76aae81c183204a54c6eadbbc1dd1d6a.ru","_translationsConfigFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru\\tcf.json","_cacheRoot":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru\\e18005f0f1b33c29e81d732535d8c0e47cafb0b5","_corruptedFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru\\corrupted.info","_languagePackSupport":true}
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\Sasha
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\git\cmd;c:\xampp\php;c:\programdata\composersetup\bin;c:\program files (x86)\ati technologies\ati.ace\core-static;C:\ProgramData\chocolatey\bin;C:\Users\Sasha\AppData\Local\Microsoft\WindowsApps;;C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sasha\AppData\Roaming\Composer\vendor\bin
+# environment
+COMPUTERNAME = DESKTOP-3B0VPI0
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132931069433914775
+# environment
+LOGONSERVER = \\DESKTOP-3B0VPI0
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = Sasha
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-3B0VPI0
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile
+.DEFAULT_GOAL := install
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-3B0VPI0
+# environment
+NUMBER_OF_PROCESSORS = 2
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\Sasha\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\Sasha\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\29963b60c18b16e676387e5b9a17b8e5-1.66.0-main-sock
+# environment
+MOZ_DISABLE_OOP_PLUGINS = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 170a
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
+# variable set hash-table stats:
+# Load=98/1024=10%, Rehash=0, Collisions=9/125=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key c:/xampp/htdocs/hexletp1, mtime 1649061154): 12 files, no impossibilities.
+
+# 12 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+brain-games:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 4):
+	php ./bin/brain-games
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-04 11:30:51
+#  File has been updated.
+#  Successfully updated.
+
+autoload:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	composer dump-autoload
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search  
+has been done.
+#  File does not exist.
+#  File has not been updated.
+
+validate:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+	composer validate
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	composer install
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/18=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 19 / storage = 159 B / avg = 8 B
+# current buf: size = 8174 B / used = 159 B / count = 19 / avg = 8 B
+
+# strcache performance: lookups = 27 / hit rate = 29%
+# hash-table stats:
+# Load=19/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Mon Apr 04 15:01:36 2022
+
  
