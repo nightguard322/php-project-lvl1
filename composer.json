@@ -9,6 +9,9 @@
             "src/Cli.php"
         ]
     },
+    "scripts": {
+        "cs": "phpcs -- --standard=PSR12 src bin"
+    },
     "require": {
         "wp-cli/php-cli-tools": "*",
         "squizlabs/php_codesniffer": "*"},
