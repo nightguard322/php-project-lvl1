@@ -26,5 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
+      - name: install
+        run: composer global require "squizlabs/php_codesniffer=*"
       - name: lint
-        run: composer cs
+        run: phpcs -- --standard=PSR12 src bin
