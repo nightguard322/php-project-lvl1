@@ -7,4 +7,4 @@ validate:
 autoload:
 	composer dump-autoload
 lint:
-	phpcs -- --standard=PSR12 src bin
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
