@@ -7,8 +7,9 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Apr 04 15:01:36 2022
+# Make data base, printed on Wed Apr 06 15:31:31 2022
 
 # Variables
 
@@ -25,9 +26,10 @@ AMDAPPSDKROOT = C:\Program Files (x86)\AMD APP\
 # environment
 LOCALAPPDATA = C:\Users\Sasha\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-04c609a5-aa5f-4b43-89df-d7c1100e993b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9e1a93eb-6283-4eb6-8991-17b7b99253e3-sock
 # environment
-VSCODE_CWD = C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\Users\Sasha\AppData\Local\P 
+rograms\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -41,7 +43,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_464_NPWWGUVEIFEYZLBU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14804_CHTJKSREZPRNTOOH
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -97,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 464
+VSCODE_PID = 14804
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -105,7 +107,7 @@ VSCODE_PID = 464
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"76aae81c183204a54c6eadbbc1dd1d6a.ru","_translationsConfigFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru\\tcf.json","_cacheRoot":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru\\e18005f0f1b33c29e81d732535d8c0e47cafb0b5","_corruptedFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\76aae81c183204a54c6eadbbc1dd1d6a.ru\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"1efd7555d7584e5d83e43ad36f58bd35.ru","_translationsConfigFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\tcf.json","_cacheRoot":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\e18005f0f1b33c29e81d732535d8c0e47cafb0b5","_corruptedFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := Windows32
 # environment
@@ -194,7 +196,8 @@ VSCODE_IPC_HOOK = \\.\pipe\29963b60c18b16e676387e5b9a17b8e5-1.66.0-main-sock
 MOZ_DISABLE_OOP_PLUGINS = 1
 # default
 .RECIPEPREFIX := 
-# automatic
+# automatic 
+
 <F = $(notdir $<)
 # default
 SUFFIXES := 
@@ -209,7 +212,8 @@ PROCESSOR_REVISION = 170a
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=9/125=7%
+# Load=98/1024=10%, Rehash=0, Collisions=9/ 
+125=7%
 
 # Pattern-specific Variable Values
 
@@ -217,9 +221,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/xampp/htdocs/hexletp1, mtime 1649061154): 12 files, no impossibilities.
+# . (key c:/xampp/htdocs/hexletp1, mtime 1649247569): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -234,10 +238,17 @@ brain-games:
 #  recipe to execute (from 'Makefile', line 4):
 	php ./bin/brain-games
 
+lint:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
+
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-04 11:30:51
+#  Last modified 2022-04-05 22:57:22
 #  File has been updated.
 #  Successfully updated.
 
@@ -257,8 +268,7 @@ autoload:
 # Not a target:
 all:
 #  Command line target.
-#  Implicit rule search  
-has been done.
+#  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
 
@@ -277,19 +287,19 @@ install:
 	composer install
 
 # files hash-table stats:
-# Load=8/1024=1%, Rehash=0, Collisions=0/18=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/19=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 159 B / avg = 8 B
-# current buf: size = 8174 B / used = 159 B / count = 19 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 182 B / avg = 8 B
+# current buf: size = 8174 B / used = 182 B / count = 22 / avg = 8 B
 
-# strcache performance: lookups = 27 / hit rate = 29%
+# strcache performance: lookups = 31 / hit rate = 29%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Mon Apr 04 15:01:36 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/31=0%
+# Finished Make data base on Wed Apr 06 15:31:31 2022
 
  
