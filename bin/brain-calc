@@ -11,4 +11,4 @@ use function Brain\Games\Cli\makeHello;
 use function Brain\Games\Even\gameEven;
 
 $name = Brain\Games\Cli\makeHello();
-Brain\Games\Even\gameEven($name);
+Brain\Games\Calc\gameCalc($name);

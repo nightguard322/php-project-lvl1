@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Wed Apr 06 15:31:31 2022
+# Make data base, printed on Fri Apr 08 22:30:44 2022
 
 # Variables
 
@@ -26,10 +25,9 @@ AMDAPPSDKROOT = C:\Program Files (x86)\AMD APP\
 # environment
 LOCALAPPDATA = C:\Users\Sasha\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-9e1a93eb-6283-4eb6-8991-17b7b99253e3-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ac051535-254f-4986-8006-f56b362cc544-sock
 # environment
-VSCODE_CWD = C:\Users\Sasha\AppData\Local\P 
-rograms\Microsoft VS Code
+VSCODE_CWD = C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -43,7 +41,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14804_CHTJKSREZPRNTOOH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6280_ZECWMDPLRCTVLGED
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -79,7 +77,7 @@ CURDIR := c:/xampp/htdocs/hexletp1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -99,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 14804
+VSCODE_PID = 6280
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -129,7 +127,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\git\cmd;c:\xampp\php;c:\programdata\composersetup\bin;c:\program files (x86)\ati technologies\ati.ace\core-static;C:\ProgramData\chocolatey\bin;C:\Users\Sasha\AppData\Local\Microsoft\WindowsApps;;C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sasha\AppData\Roaming\Composer\vendor\bin
+PATH = C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\git\cmd;c:\xampp\php;c:\programdata\composersetup\bin;c:\program files (x86)\ati technologies\ati.ace\core-static;C:\ProgramData\chocolatey\bin;C:\Users\Sasha\AppData\Local\Microsoft\WindowsApps;C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sasha\AppData\Roaming\Composer\vendor\bin;C:\xampp\php\php.exe;
 # environment
 COMPUTERNAME = DESKTOP-3B0VPI0
 # default
@@ -142,6 +140,8 @@ PROMPT = $P$G
 CHOCOLATEYLASTPATHUPDATE = 132931069433914775
 # environment
 LOGONSERVER = \\DESKTOP-3B0VPI0
+# environment
+CLIENTNAME = DELL
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -196,24 +196,23 @@ VSCODE_IPC_HOOK = \\.\pipe\29963b60c18b16e676387e5b9a17b8e5-1.66.0-main-sock
 MOZ_DISABLE_OOP_PLUGINS = 1
 # default
 .RECIPEPREFIX := 
-# automatic 
-
+# automatic
 <F = $(notdir $<)
 # default
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-SESSIONNAME = Console
+SESSIONNAME = RDP-Tcp#1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 170a
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
-# variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=9/ 
-125=7%
+# variable set hash- 
+table stats:
+# Load=99/1024=10%, Rehash=0, Collisions=9/126=7%
 
 # Pattern-specific Variable Values
 
@@ -221,9 +220,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
 
 # Directories
 
-# . (key c:/xampp/htdocs/hexletp1, mtime 1649247569): 14 files, no impossibilities.
+# . (key c:/xampp/htdocs/hexletp1, mtime 1649400252): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -236,27 +235,29 @@ brain-games:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 4):
-	php ./bin/brain-games
+	./ 
+bin/brain-games
 
 lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 10):
+#  recipe to execute (from 'Makefile', line 14):
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-05 22:57:22
+#  Last modified 2022-04-07 22:15:47
 #  File has been updated.
 #  Successfully updated.
 
 autoload:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  File has not been updated 
+.
+#  recipe to execute (from 'Makefile', line 12):
 	composer dump-autoload
 
 # Not a target:
@@ -265,18 +266,26 @@ autoload:
 #  Modification time never checked.
 #  File has not been updated.
 
+game-calc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	./bin/brain-calc
+
 # Not a target:
 all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  Fi 
+le has not been updated.
 
 validate:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 6):
+#  recipe to execute (from 'Makefile', line 10):
 	composer validate
 
 install:
@@ -286,20 +295,29 @@ install:
 #  recipe to execute (from 'Makefile', line 2):
 	composer install
 
+game-even:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been up 
+dated.
+#  recipe to execute (from 'Makefile', line 6):
+	./bin/brain-even
+
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/19=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 182 B / avg = 8 B
-# current buf: size = 8174 B / used = 182 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 25 / storage = 207 B / avg = 8 B
+# current buf: size = 8174 B / used = 207 B / count = 25 / avg = 8 B
 
-# strcache performance: lookups = 31 / hit rate = 29%
+# strcache performance: lookups = 36 / hit rate = 30%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/31=0%
-# Finished Make data base on Wed Apr 06 15:31:31 2022
+# Load=25/8192=0%, Rehash=0, Collisions=2/36=6%
+# Fin 
+ished Make data base on Fri Apr 08 22:30:44 2022
 
  

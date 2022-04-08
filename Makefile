@@ -1,9 +1,11 @@
 install:
 	composer install
 brain-games:
-	php ./bin/brain-games
+	./bin/brain-games
 game-even:
-	php ./bin/brain-even
+	./bin/brain-even
+game-calc:
+	./bin/brain-calc
 validate:
 	composer validate
 autoload:
