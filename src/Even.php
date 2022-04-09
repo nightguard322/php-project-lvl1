@@ -1,5 +1,7 @@
 <?php
+
 namespace Brain\Games\Even;
+
 use function cli\line;
 use function cli\prompt;
 use function Brain\Games\Engine;
@@ -23,7 +25,8 @@ function isEven($num): bool
     }
     return false;
 }
-function giveAnswer($num) {
+function giveAnswer($num)
+{
     if (isEven($num)) {
         return "yes";
     }

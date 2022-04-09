@@ -10,7 +10,7 @@ function gameEngine(string $name, string | int $question, string | int $answer):
     if ((string)$message === (string)$answer) {
         showMessage("Correct!");
     } else {
-        exit("{$message} is wrong answer ;(. Correct answer was {$answer}\nLet's try again, {$name}!");
+        exit("'{$message}' is wrong answer ;(. Correct answer was '{$answer}'\nLet's try again, {$name}!.");
     }
 }
 

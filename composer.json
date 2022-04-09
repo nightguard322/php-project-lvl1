@@ -9,7 +9,8 @@
             "src/Cli.php",
 	    "src/Even.php",
 	    "src/Engine.php",
-        "src/Calc.php"
+            "src/Calc.php",
+	    "src/Gcd.php"
         ]
     },
     "scripts": {
@@ -19,6 +20,6 @@
         "wp-cli/php-cli-tools": "*",
         "squizlabs/php_codesniffer": "*"},
         "bin": [
-            "bin/brain-game", "bin/brain-even", "bin/brain-calc"
+            "bin/brain-game", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd"
           ]
 }
