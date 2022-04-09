@@ -6,6 +6,8 @@ game-even:
 	./bin/brain-even
 game-calc:
 	./bin/brain-calc
+game-gcd:
+	./bin/brain-gcd
 validate:
 	composer validate
 autoload:
