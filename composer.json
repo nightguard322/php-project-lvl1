@@ -7,10 +7,11 @@
         },
 	    "files": [
             "src/Cli.php",
-	    "src/Even.php",
+	    "src/Games/Even.php",
 	    "src/Engine.php",
-            "src/Calc.php",
-	    "src/Gcd.php"
+            "src/Games/Calc.php",
+	    "src/Games/Gcd.php",
+	    "src/Games/Progression.php"
         ]
     },
     "scripts": {
@@ -20,6 +21,6 @@
         "wp-cli/php-cli-tools": "*",
         "squizlabs/php_codesniffer": "*"},
         "bin": [
-            "bin/brain-game", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd"
+            "bin/brain-game", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/game-progression"
           ]
 }

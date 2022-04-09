@@ -8,6 +8,8 @@ game-calc:
 	./bin/brain-calc
 game-gcd:
 	./bin/brain-gcd
+game-progression:
+	./bin/brain-progression
 validate:
 	composer validate
 autoload:

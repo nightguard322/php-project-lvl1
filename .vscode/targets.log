@@ -7,13 +7,12 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Fri Apr 08 22:30:44 2022
+# Make data base, printed on Sat Apr 09 22:14:32 2022
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -25,11 +24,12 @@ AMDAPPSDKROOT = C:\Program Files (x86)\AMD APP\
 # environment
 LOCALAPPDATA = C:\Users\Sasha\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ac051535-254f-4986-8006-f56b362cc544-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d29f0e4d-899d-4008-8769-69fdca07b00f-sock
 # environment
 VSCODE_CWD = C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code
 # environment
-CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+CHOCOLATEYINSTALL = C:\Pr 
+ogramData\chocolatey
 # environment
 SYSTEMROOT = C:\Windows
 # environment
@@ -41,9 +41,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6280_ZECWMDPLRCTVLGED
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8228_IAESVGKJWPZLLXDB
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -57,7 +55,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Sasha\AppData\Roaming\Code\CachedData\e18005f0f1b33c29e81d732535d8c0e47cafb0b5
+VSCODE_CODE_CACHE_PATH = C:\Users\Sasha\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
 # environment
 LANG = C
 # default
@@ -77,7 +75,7 @@ CURDIR := c:/xampp/htdocs/hexletp1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -97,7 +95,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 6280
+VSCODE_PID = 8228
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -105,7 +103,7 @@ VSCODE_PID = 6280
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"1efd7555d7584e5d83e43ad36f58bd35.ru","_translationsConfigFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\tcf.json","_cacheRoot":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\e18005f0f1b33c29e81d732535d8c0e47cafb0b5","_corruptedFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"1efd7555d7584e5d83e43ad36f58bd35.ru","_translationsConfigFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\tcf.json","_cacheRoot":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru","_resolvedLanguagePackCoreLocation":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\8dfae7a5cd50421d10cd99cb873990460525a898","_corruptedFile":"C:\\Users\\Sasha\\AppData\\Roaming\\Code\\clp\\1efd7555d7584e5d83e43ad36f58bd35.ru\\corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := Windows32
 # environment
@@ -164,6 +162,8 @@ USERDOMAIN = DESKTOP-3B0VPI0
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
 # makefile
 .DEFAULT_GOAL := install
 # default
@@ -191,38 +191,39 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\Sasha\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\29963b60c18b16e676387e5b9a17b8e5-1.66.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\29963b60c18b16e676387e5b9a17b8e5-1.66.1-main-sock
 # environment
 MOZ_DISABLE_OOP_PLUGINS = 1
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
-# default
+# 
+ default
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-SESSIONNAME = RDP-Tcp#1
+SESSIONNAME = RDP-Tcp#3
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = 170a
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
-# variable set hash- 
-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=9/126=7%
+# variable set hash-table stats:
+# Load=98/1024=10%, Rehash=0, Collisions=8/125=6%
 
-# Pattern-specific Variable Values
+# Pattern- 
+specific Variable Values
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (key c:/xampp/htdocs/hexletp1, mtime 1649400252): 15 files, no impossibilities.
+# . (key c:/xampp/htdocs/hexletp1, mtime 1649531542): 16 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -235,29 +236,27 @@ brain-games:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 4):
-	./ 
-bin/brain-games
+	./bin/brain-games
 
 lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 16):
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-07 22:15:47
+#  Last modified 2022-04-09 11:48:20
 #  File has been updated.
 #  Successfully updated.
 
 autoload:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated 
-.
-#  recipe to execute (from 'Makefile', line 12):
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
 	composer dump-autoload
 
 # Not a target:
@@ -278,14 +277,13 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  Fi 
-le has not been updated.
+#  File has not been updated.
 
 validate:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 10):
+#  recipe to execute (from 'Makefile', line 12):
 	composer validate
 
 install:
@@ -298,26 +296,31 @@ install:
 game-even:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been up 
-dated.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 6):
 	./bin/brain-even
 
+game-gcd:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	./bin/brain-gcd
+
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/22=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 207 B / avg = 8 B
-# current buf: size = 8174 B / used = 207 B / count = 25 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 235 B / avg = 8 B
+# current buf: size = 8174 B / used = 235 B / count = 27 / avg = 8 B
 
-# strcache performance: lookups = 36 / hit rate = 30%
+# strcache performance: lookups = 39 / hit rate = 30%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=2/36=6%
-# Fin 
-ished Make data base on Fri Apr 08 22:30:44 2022
+# Load=27/8192=0%, Rehash=0, Collisions=2/39=5%
+# Finished Make data base on Sat Apr 09 22:14:32 2022
 
  
