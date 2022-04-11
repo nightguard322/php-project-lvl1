@@ -13,7 +13,7 @@ function gamePrime($name)
     for ($i = 0; $i < 3; $i++) {
         $question = makeExpression();
         $answer = giveAnswer($question);
-        \Brain\Games\Engine\gameEngine($name, $question, $answer);
+        \Brain\Games\Engine\gameEngine($name, (string)$question, (string)$answer);
     }
     \Brain\Games\Engine\showMessage("Congratulations, {$name}!");
 }

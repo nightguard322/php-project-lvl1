@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Mon Apr 11 11:02:34 2022
+# Make data base, printed on Mon Apr 11 11:30:31 2022
 
 # Variables
 
@@ -24,7 +23,7 @@ AMDAPPSDKROOT = C:\Program Files (x86)\AMD APP\
 # environment
 LOCALAPPDATA = C:\Users\Sasha\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ef1196b3-a4ed-49f7-b3fd-365df76fa05f-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4bb465be-b20a-4d13-96ba-03c063851f06-sock
 # environment
 VSCODE_CWD = C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -40,12 +39,11 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9612_ECNNHLKULBCFLSIW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6512_OYIFNRRFJWJOBEOA
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
-.VA 
-RIABLES := 
+.VARIABLES := 
 # automatic
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
@@ -95,7 +93,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 9612
+VSCODE_PID = 6512
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -277,7 +275,8 @@ game-calc:
 
 # Not a target:
 all:
-#  Command line target.
+#  Command line 
+ target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
@@ -315,8 +314,7 @@ game-gcd:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 10):
-	./ 
-bin/brain-gcd
+	./bin/brain-gcd
 
 # files hash-table stats:
 # Load=14/1024=1%, Rehash=0, Collisions=0/24=0%
@@ -332,6 +330,6 @@ bin/brain-gcd
 # strcache performance: lookups = 43 / hit rate = 32%
 # hash-table stats:
 # Load=29/8192=0%, Rehash=0, Collisions=2/43=5%
-# Finished Make data base on Mon Apr 11 11:02:34 2022
+# Finished Make data base on Mon Apr 11 11:30:31 2022
 
  

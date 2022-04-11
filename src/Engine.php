@@ -5,7 +5,7 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function gameEngine($name, $question, $correctAnswer): void
+function gameEngine(string $name, string $question, string $correctAnswer): void
 {
     showMessage("Question {$question}"); //3 + 2
     $answer = showUserField("Your answer");
