@@ -11,7 +11,7 @@ function gameEven($name)
     $task = 'Answer "yes" if the number is even, otherwise answer "no".';
     \Brain\Games\Engine\showMessage($task);
     for ($i = 0; $i < 3; $i++) {
-        $question = getNumber();
+        $question = makeExpression();
         $answer = giveAnswer($question);
         \Brain\Games\Engine\gameEngine($name, $question, $answer);
     }
@@ -25,6 +25,12 @@ function isEven($num): bool
     }
     return false;
 }
+
+function makeExpression()
+{
+    return getNumber();
+}
+
 function giveAnswer($num)
 {
     if (isEven($num)) {
