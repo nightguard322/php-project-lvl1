@@ -1,5 +1,7 @@
 <?php
+
 namespace Brain\Games\Calc;
+
 use function cli\line;
 use function cli\prompt;
 use function Brain\Games\Engine;
@@ -43,7 +45,7 @@ function giveAnswer($expression): int
             $result = $expression[0] * $expression[2];
             break;
         case "/":
-            $result = $expression[0] / $expression[2]; 
+            $result = $expression[0] / $expression[2];
             break;
         default:
             exit('Произошла ошибка');

@@ -1,5 +1,7 @@
 <?php
+
 namespace Brain\Games\Engine;
+
 use function cli\line;
 use function cli\prompt;
 
@@ -8,9 +10,9 @@ function gameEngine(string $name, string | int $question, string | int $correctA
     showMessage("Question {$question}"); //3 + 2
     $answer = showUserField("Your answer");
     if (isCorrect($answer, $correctAnswer)) {
-    showMessage("Correct!");
+        showMessage("Correct!");
     } else {
-    exit("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'\nLet's try again, {$name}!.");
+        exit("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'\nLet's try again, {$name}!.");
     }
 }
 
@@ -22,7 +24,7 @@ function showMessage($message)
 {
     return \cli\line($message);
 }
-function isCorrect($answer, $correctAnswer) 
+function isCorrect($answer, $correctAnswer)
 {
     if ((string)$answer === (string)$correctAnswer) {
         return true;

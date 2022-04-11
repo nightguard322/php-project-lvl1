@@ -39,8 +39,9 @@ function giveAnswer($expression): int
 {
     $expression = explode(' ', $expression);
     $emptySlot = array_search('..', $expression, true);
-    
-    return array_key_exists($expression[$emptySlot + 1], $expression) ? $expression[$emptySlot + 1] - 2 : $expression[$emptySlot - 1] + 2;
+    $nextSlot = $expression[$emptySlot + 1];
+    $prevSlot = $expression[$emptySlot - 1];
+    return array_key_exists($nextSlot, $expression) ? $nextSlot - 2 : $prevSlot + 2;
 }
 
 function getNumber($start = 1, $end = 9): int

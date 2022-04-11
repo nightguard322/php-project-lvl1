@@ -34,7 +34,6 @@ function giveAnswer($expression): int
         $dividend = $divisor;
         $divisor = $temp;
     }
-    
     return $dividend;
 }
 

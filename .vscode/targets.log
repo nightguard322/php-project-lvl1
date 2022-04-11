@@ -9,7 +9,7 @@ make: *** No rule to make target 'all'.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sat Apr 09 22:14:32 2022
+# Make data base, printed on Mon Apr 11 11:02:34 2022
 
 # Variables
 
@@ -24,12 +24,11 @@ AMDAPPSDKROOT = C:\Program Files (x86)\AMD APP\
 # environment
 LOCALAPPDATA = C:\Users\Sasha\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d29f0e4d-899d-4008-8769-69fdca07b00f-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ef1196b3-a4ed-49f7-b3fd-365df76fa05f-sock
 # environment
 VSCODE_CWD = C:\Users\Sasha\AppData\Local\Programs\Microsoft VS Code
 # environment
-CHOCOLATEYINSTALL = C:\Pr 
-ogramData\chocolatey
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
 SYSTEMROOT = C:\Windows
 # environment
@@ -41,11 +40,12 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8228_IAESVGKJWPZLLXDB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9612_ECNNHLKULBCFLSIW
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
-.VARIABLES := 
+.VA 
+RIABLES := 
 # automatic
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
@@ -95,7 +95,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 8228
+VSCODE_PID = 9612
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -162,8 +162,6 @@ USERDOMAIN = DESKTOP-3B0VPI0
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
 # makefile
 .DEFAULT_GOAL := install
 # default
@@ -198,8 +196,7 @@ MOZ_DISABLE_OOP_PLUGINS = 1
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
-# 
- default
+# default
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
@@ -212,16 +209,15 @@ PROCESSOR_REVISION = 170a
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=8/125=6%
+# Load=97/1024=9%, Rehash=0, Collisions=8/124=6%
 
-# Pattern- 
-specific Variable Values
+# Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (key c:/xampp/htdocs/hexletp1, mtime 1649531542): 16 files, no impossibilities.
+# . (key c:/xampp/htdocs/hexletp1, mtime 1649661268): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -242,21 +238,28 @@ lint:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
+#  recipe to execute (from 'Makefile', line 20):
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-09 11:48:20
+#  Last modified 2022-04-11 10:16:21
 #  File has been updated.
 #  Successfully updated.
+
+game-progression:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 12):
+	./bin/brain-progression
 
 autoload:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 18):
 	composer dump-autoload
 
 # Not a target:
@@ -283,7 +286,7 @@ validate:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 12):
+#  recipe to execute (from 'Makefile', line 16):
 	composer validate
 
 install:
@@ -292,6 +295,13 @@ install:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
 	composer install
+
+game-prime:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	./bin/brain-prime
 
 game-even:
 #  Implicit rule search has not been done.
@@ -305,22 +315,23 @@ game-gcd:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 10):
-	./bin/brain-gcd
+	./ 
+bin/brain-gcd
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/22=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 235 B / avg = 8 B
-# current buf: size = 8174 B / used = 235 B / count = 27 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 263 B / avg = 9 B
+# current buf: size = 8174 B / used = 263 B / count = 29 / avg = 9 B
 
-# strcache performance: lookups = 39 / hit rate = 30%
+# strcache performance: lookups = 43 / hit rate = 32%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=2/39=5%
-# Finished Make data base on Sat Apr 09 22:14:32 2022
+# Load=29/8192=0%, Rehash=0, Collisions=2/43=5%
+# Finished Make data base on Mon Apr 11 11:02:34 2022
 
  

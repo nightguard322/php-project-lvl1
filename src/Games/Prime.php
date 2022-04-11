@@ -25,7 +25,7 @@ function makeExpression()
 
 function isPrime($num): bool
 {
-    for($i = 2; $i <= 9; $i++) {
+    for ($i = 2; $i <= 9; $i++) {
         if ($num % $i === 0) {
             return false;
         }
