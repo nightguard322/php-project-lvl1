@@ -1,4 +1,4 @@
-{
+{	
     "name": "hexlet/code",
     "description": "hexlet project#1",
     "autoload": {
@@ -11,7 +11,8 @@
 	    "src/Engine.php",
             "src/Games/Calc.php",
 	    "src/Games/Gcd.php",
-	    "src/Games/Progression.php"
+	    "src/Games/Progression.php",
+	    "src/Games/Prime.php"
         ]
     },
     "scripts": {
@@ -21,6 +22,6 @@
         "wp-cli/php-cli-tools": "*",
         "squizlabs/php_codesniffer": "*"},
         "bin": [
-            "bin/brain-game", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/game-progression"
+            "bin/brain-game", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/game-progression", "bin/game-prime"
           ]
 }

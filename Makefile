@@ -10,6 +10,8 @@ game-gcd:
 	./bin/brain-gcd
 game-progression:
 	./bin/brain-progression
+game-prime:
+	./bin/brain-prime
 validate:
 	composer validate
 autoload:
