@@ -1,0 +1,10 @@
+{
+    "name": "hexlet/code",
+    "description": "hexlet project#1",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "require": {}
+}
