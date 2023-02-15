@@ -1,13 +1,22 @@
 {
     "name": "hexlet/code",
     "bin": [
-  	"bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "description": "hexlet project#1",
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        }
+        },
+	"files": [
+        "src/games/GameEven.php",
+	    "src/Cli.php",
+        "src/Engine.php"
+	]
     },
-    "require": {}
+    "require": {
+    	"wp-cli/php-cli-tools":"0.11.17",
+        "squizlabs/php_codesniffer": "3.*"
+    }
 }
