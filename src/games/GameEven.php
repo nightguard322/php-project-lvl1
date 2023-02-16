@@ -2,34 +2,49 @@
 
 namespace BrainGames\Games\GameEven;
 
+use function cli\line;
+use function cli\prompt;
+use function BrainGames\Cli\makeHello;
+
 if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
     require_once (__DIR__ . '/../vendor/autoload.php');
 } else {
     require_once (__DIR__ . '/../../vendor/autoload.php');
 }
 
-use function BrainGames\Engine\getName;
-use function BrainGames\Engine\getNumber;
-use function BrainGames\Engine\getAnswer;
-use function cli\line;
-use function cli\prompt;
+use function BrainGames\Engine\runGame;
+
+function getAnswer(int $number): string
+{
+    if (isEven($number)) {
+        return "yes";
+    }
+    return "no";
+}
+
+function getNumber(): int
+{
+    return mt_rand(0, 99);
+}
+
+function isEven(int $number)
+{
+    if ($number % 2 === 0) {
+        return true;
+    }
+    return false;
+}
 
 function GameEven()
 {
-    $name = getName();
+    $name = makeHello();
     line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < 3; $i++) {
-        $number = getNumber();
-        line("Question:{$number}");
-        $answer = prompt('Your answer');
-        $correct = getAnswer($number);
-        if ($answer === $correct) {
-            line("Correct!");
-        } else {
-            line("{$answer} is wrong answer ;(. Correct answer was {$correct}");
-            line("Let's try again, %s!", $name);
-            exit();
-        }; 
+        $question = getNumber();
+        $answer = getAnswer($question);
+        runGame($name, $question, $answer);
     }
     line("Congratulations, %s!", $name);
+    
 }
+

@@ -2,7 +2,8 @@
     "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "description": "hexlet project#1",
     "autoload": {
@@ -10,6 +11,8 @@
             "Hexlet\\Code\\": "src/"
         },
 	"files": [
+        "src/games/GameGcd.php",
+        "src/games/GameCalc.php",
         "src/games/GameEven.php",
 	    "src/Cli.php",
         "src/Engine.php"
