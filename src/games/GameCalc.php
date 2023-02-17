@@ -5,17 +5,15 @@ namespace BrainGames\Games\GameCalc;
 use function BrainGames\Cli\makeHello;
 use function cli\line;
 use function cli\prompt;
-
-if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
-    require_once (__DIR__ . '/../vendor/autoload.php');
-} else {
-    require_once (__DIR__ . '/../../vendor/autoload.php');
-}
-
 use function BrainGames\Engine\runGame;
 
 function GameCalc()
 {
+    if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+        require_once(__DIR__ . '/../vendor/autoload.php');
+    } else {
+        require_once(__DIR__ . '/../../vendor/autoload.php');
+    }
     $name = makeHello();
     line('What is the result of the expression?');
     for ($i = 0; $i < 3; $i++) {
@@ -24,7 +22,6 @@ function GameCalc()
         runGame($name, $question, $answer);
     }
     line("Congratulations, %s!", $name);
-    
 }
 function getAction()
 {
@@ -59,7 +56,7 @@ function getData()
 {
     $firstNum = getNumber();
     $secoundNum = getNumber();
-    WHILE ($secoundNum === 0 ) {
+    while ($secoundNum === 0) {
         $secoundNum = getNumber();
     }
     $action = getAction();
@@ -78,4 +75,3 @@ function getAnswer(string $question)
     [$firstNum, $action, $secoundNum] = $data;
     return calc($action, [$firstNum, $secoundNum]);
 }
-

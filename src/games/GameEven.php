@@ -5,13 +5,6 @@ namespace BrainGames\Games\GameEven;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Cli\makeHello;
-
-if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
-    require_once (__DIR__ . '/../vendor/autoload.php');
-} else {
-    require_once (__DIR__ . '/../../vendor/autoload.php');
-}
-
 use function BrainGames\Engine\runGame;
 
 function getAnswer(int $number): string
@@ -37,6 +30,11 @@ function isEven(int $number)
 
 function GameEven()
 {
+    if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+        require_once(__DIR__ . '/../vendor/autoload.php');
+    } else {
+        require_once(__DIR__ . '/../../vendor/autoload.php');
+    }
     $name = makeHello();
     line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < 3; $i++) {
@@ -45,6 +43,4 @@ function GameEven()
         runGame($name, $question, $answer);
     }
     line("Congratulations, %s!", $name);
-    
 }
-
