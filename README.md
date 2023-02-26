@@ -1,0 +1,1 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/77bfbaa3068dbdb0c52f/maintainability)](https://codeclimate.com/github/nightguard322/php-project-lvl11/maintainability)

@@ -52,4 +52,3 @@ function getQuestion(int $number)
     $question =  implode(' ', $data);
     return ['question' => "{$question}", 'answer' => $answer];
 }
-

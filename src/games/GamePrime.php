@@ -29,12 +29,12 @@ function getNumber(): int
 
 function getQuestion(int $number)
 {
-    $answer =  true;
-	if (!isPrime($number)) {
-		$answer =  false;
-	}
-	return ['question' => $number, 'answer' => getAnswer($answer)];
-}	
+    $answer = true;
+    if (!isPrime($number)) {
+        $answer = false;
+    }
+    return ['question' => $number, 'answer' => getAnswer($answer)];
+}
 
 function getAnswer(bool $answer)
 {
@@ -43,17 +43,16 @@ function getAnswer(bool $answer)
     }
     return 'no';
 }
-function isPrime(int $number) 
+function isPrime(int $number)
 {
     if (($number % 2 === 0) || ($number % 3 === 0)) {
-		return false;
+        return false;
     }
-	$finish = round(sqrt($number));
-	for ($i = 2; $i < $finish; $i++) {
-		if ($number % $i === 0) {
-			return false;
-		}
-	}
-	return true;
+    $finish = round(sqrt($number));
+    for ($i = 2; $i < $finish; $i++) {
+        if ($number % $i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
-	
