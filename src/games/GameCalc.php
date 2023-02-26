@@ -18,7 +18,7 @@ function GameCalc()
     line('What is the result of the expression?');
     for ($i = 0; $i < 3; $i++) {
         $question = getQuestion(getData());
-        runGame($name, $question, $answer);
+        runGame($name, $question);
     }
     line("Congratulations, %s!", $name);
 }
