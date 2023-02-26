@@ -18,7 +18,6 @@ function GameCalc()
     line('What is the result of the expression?');
     for ($i = 0; $i < 3; $i++) {
         $question = getQuestion(getData());
-        $answer = getAnswer($question);
         runGame($name, $question, $answer);
     }
     line("Congratulations, %s!", $name);
@@ -66,12 +65,9 @@ function getData()
 function getQuestion(array $data)
 {
     [$firstNum, $secoundNum, $action] = $data;
-    return "{$firstNum} {$action} {$secoundNum}";
+    $answer = calc($action, [$firstNum, $secoundNum]);
+    return ['question' => "{$firstNum} {$action} {$secoundNum}", 
+            'answer' => $answer];
 }
 
-function getAnswer(string $question)
-{
-    $data = explode(' ', $question);
-    [$firstNum, $action, $secoundNum] = $data;
-    return calc($action, [$firstNum, $secoundNum]);
-}
+

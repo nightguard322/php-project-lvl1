@@ -19,9 +19,8 @@ function GameProgression()
     $name = makeHello();
     line('Find the greatest common divisor of given numbers.');
     for ($i = 0; $i < 3; $i++) {
-        $question = getQuestion(getNumber());
-        $answer = getAnswer($question);
-        runGame($name, $question, $answer);
+        $gameData = getQuestion(getNumber());
+        runGame($name, $gameData);
     }
     line("Congratulations, %s!", $name);
 }
@@ -47,18 +46,10 @@ function makeProgression($data)
 function getQuestion(int $number)
 {
     $data = makeProgression($number);
-    $data[array_rand($data)] = '..';
-    return implode(' ', $data);
+    $questionKey = array_rand($data);
+    $answer = $data[$questionKey];
+    $data[$questionKey] = '..';
+    $question =  implode(' ', $data);
+    return ['question' => "{$question}", 'answer' => $answer];
 }
 
-function getAnswer(string $question)
-{
-    $data = explode(' ', $question);
-    for ($i = 0, $length = count($data); $i < $length; $i++) {
-        if ($data[$i] === '..') {
-            $diff = array_key_exists($i + 2, $data) ? $data[$i + 2] - $data[$i + 1] : $data[$i - 1] - $data[$i - 2];
-            $answer = array_key_exists($i - 1, $data) ? $data[$i - 1] + $diff : $data[$i + 1] - $diff;
-        }
-    }
-    return $answer;
-}

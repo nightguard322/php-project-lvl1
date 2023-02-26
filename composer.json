@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-prime"
     ],
     "description": "hexlet project#1",
     "autoload": {
@@ -12,6 +13,7 @@
         },
 	"files": [
         "src/games/GameGcd.php",
+        "src/games/GamePrime.php",
         "src/games/GameCalc.php",
         "src/games/GameEven.php",
         "src/games/GameProgression.php",

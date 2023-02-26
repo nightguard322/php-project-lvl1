@@ -17,9 +17,8 @@ function gameGcd()
     $name = makeHello();
     line('Find the greatest common divisor of given numbers.');
     for ($i = 0; $i < 3; $i++) {
-        $question = getQuestion(getData());
-        $answer = getAnswer($question);
-        runGame($name, $question, $answer);
+        $qameData = getQuestion(getData());
+        runGame($name, $qameData);
     }
     line("Congratulations, %s!", $name);
 }
@@ -55,12 +54,6 @@ function getData()
 function getQuestion(array $data)
 {
     [$firstNum, $secoundNum] = $data;
-    return "{$firstNum} {$secoundNum}";
-}
-
-function getAnswer(string $question)
-{
-    $data = explode(' ', $question);
-    [$firstNum, $secoundNum] = $data;
-    return calc([$firstNum, $secoundNum]);
+    $answer = calc([$firstNum, $secoundNum]);
+    return ['question' => "{$firstNum} {$secoundNum}", 'answer' => $answer];
 }
