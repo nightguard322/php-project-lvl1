@@ -32,8 +32,13 @@ make brain-progression
 
 ## How it works:
 
-Brain Calc Game: https://asciinema.org/a/3l2oYRMqzb2IoPkME3nRGHm9y
-Brain Even Game: https://asciinema.org/a/WGAj3TE0h0GhWXJ96hQWdKA78
-Brain Gcd Game: https://asciinema.org/a/fEgFyYNyRX7VivbWiSetBDXIz
-Brain Prime Game: https://asciinema.org/a/kLczoE08YijSSyFFlakHAk5ro
-Brain Prime Progression: https://asciinema.org/a/xgwuEChOP3E9nw74uF5YnS1SQ
+Brain Calc Game: 
+- https://asciinema.org/a/3l2oYRMqzb2IoPkME3nRGHm9y
+Brain Even Game: 
+- https://asciinema.org/a/WGAj3TE0h0GhWXJ96hQWdKA78
+Brain Gcd Game: 
+- https://asciinema.org/a/fEgFyYNyRX7VivbWiSetBDXIz
+Brain Prime Game: 
+- https://asciinema.org/a/kLczoE08YijSSyFFlakHAk5ro
+Brain Prime Progression: 
+- https://asciinema.org/a/xgwuEChOP3E9nw74uF5YnS1SQ
