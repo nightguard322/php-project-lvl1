@@ -7,6 +7,13 @@ use function BrainGames\Games\GameCalc\getAnswer;
 use function cli\line;
 use function cli\prompt;
 
+/**
+ * Запуск движка игр
+ *
+ * @param  mixed $name - имя игрока
+ * @param  mixed $gameData - данные для игры
+ * @return void
+ */
 function runGame(string $name, array $gameData)
 {
     require_once __DIR__ . '/../vendor/autoload.php';
