@@ -43,9 +43,9 @@ function makeProgression()
     return $result;
 }
 
-function getQuestion(int $number)
+function getQuestion()
 {
-    $data = makeProgression($number);
+    $data = makeProgression();
     $questionKey = array_rand($data);
     $answer = $data[$questionKey];
     $data[$questionKey] = '..';
