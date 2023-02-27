@@ -3,5 +3,5 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 use function BrainGames\Games\GameGcd\GameGcd;
 
-gameGcd();
+GameGcd();
 

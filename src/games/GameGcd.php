@@ -7,22 +7,6 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\runGame;
 
-function gameGcd()
-{
-    if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
-        require_once(__DIR__ . '/../vendor/autoload.php');
-    } else {
-        require_once(__DIR__ . '/../../vendor/autoload.php');
-    }
-    $name = makeHello();
-    line('Find the greatest common divisor of given numbers.');
-    for ($i = 0; $i < 3; $i++) {
-        $qameData = getQuestion(getData());
-        runGame($name, $qameData);
-    }
-    line("Congratulations, %s!", $name);
-}
-
 function calc(array $numbers)
 {
     sort($numbers);
@@ -55,5 +39,22 @@ function getQuestion(array $data)
 {
     [$firstNum, $secoundNum] = $data;
     $answer = calc([$firstNum, $secoundNum]);
-    return ['question' => "{$firstNum} {$secoundNum}", 'answer' => $answer];
+    return ['question' => "{$firstNum} {$secoundNum}",
+            'answer' => $answer];
+}
+
+function GameGcd()
+{
+    if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+        require_once(__DIR__ . '/../vendor/autoload.php');
+    } else {
+        require_once(__DIR__ . '/../../vendor/autoload.php');
+    }
+    $name = makeHello();
+    line('Find the greatest common divisor of given numbers.');
+    for ($i = 0; $i < 3; $i++) {
+        $qameData = getQuestion(getData());
+        runGame($name, $qameData);
+    }
+    line("Congratulations, %s!", $name);
 }
