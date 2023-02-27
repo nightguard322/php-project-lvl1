@@ -1,8 +1,8 @@
 <?php
 /**
- * Запуск игры - калькулятора
- * При запуске необходимо представиться
- * Игра предложит действие, пользователь пишет ответ, результат отобразится на экране
+ * Calc game
+ * Write down your name
+ * Do the exercize 3 times and check the result
 **/
 #!/usr/bin/env php
 require_once __DIR__ . '/../vendor/autoload.php';
