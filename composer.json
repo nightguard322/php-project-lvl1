@@ -5,7 +5,8 @@
         "bin/brain-gcd",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-prime"
+        "bin/brain-prime",
+        "bin/brain-progression"
     ],
     "description": "hexlet project#1",
     "autoload": {
