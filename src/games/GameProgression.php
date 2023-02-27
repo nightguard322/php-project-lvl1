@@ -34,7 +34,7 @@ function makeProgression($data)
 {
     $start = getNumber();
     $diff = mt_rand(1, 10);
-    $length = mt_rand(1, 10);
+    $length = mt_rand(5, 10);
     $result = [$start];
     for ($i = 0; $i < $length; $i++) {
         $start += $diff;
