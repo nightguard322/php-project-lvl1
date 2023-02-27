@@ -17,7 +17,7 @@ function GameProgression()
         require_once(__DIR__ . '/../../vendor/autoload.php');
     }
     $name = makeHello();
-    line('Find the greatest common divisor of given numbers.');
+    line('What number is missing in the progression?');
     for ($i = 0; $i < 3; $i++) {
         $gameData = getQuestion(getNumber());
         runGame($name, $gameData);
