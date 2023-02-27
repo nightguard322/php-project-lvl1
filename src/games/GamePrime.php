@@ -4,7 +4,6 @@ namespace BrainGames\Games\GamePrime;
 
 use function BrainGames\Cli\makeHello;
 use function cli\line;
-use function cli\prompt;
 use function BrainGames\Engine\runGame;
 
 function GamePrime()
