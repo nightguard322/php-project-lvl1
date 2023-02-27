@@ -66,6 +66,11 @@ function getQuestion(array $data)
 {
     [$firstNum, $secoundNum, $action] = $data;
     $answer = calc($action, [$firstNum, $secoundNum]);
-    return ['question' => "$firstNum $action $secoundNum",
-            'answer' => $answer];
+    return [
+        'question' => 
+        [
+        $firstNum, $action, $secoundNum
+        ],
+        'answer' => $answer
+    ];
 }

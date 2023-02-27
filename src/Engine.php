@@ -10,9 +10,11 @@ use function cli\prompt;
 function runGame(string $name, array $gameData)
 {
     require_once __DIR__ . '/../vendor/autoload.php';
-    $question = $gameData['question'];
-    line("Question: $question");
-    var_dump($question);
+    $question = $gameData['question']; 
+    if (is_array($question)) {
+        $keys = implode(' ', $question);
+        line("Question:{$keys}", $keys);
+    }
     $answer = prompt('Your answer');
     if ($answer === (string) $gameData['answer']) {
         line("Correct!");
@@ -22,3 +24,4 @@ function runGame(string $name, array $gameData)
         exit();
     };
 }
+
