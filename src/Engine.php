@@ -18,7 +18,7 @@ function runGame(string $name, array $gameData)
 {
     require_once __DIR__ . '/../vendor/autoload.php';
     $question = $gameData['question'];
-    line("Question: %s", $question);
+    line("Question: {$question}");
     $answer = prompt('Your answer');
     if ($answer === (string) $gameData['answer']) {
         line("Correct!");
