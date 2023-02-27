@@ -13,7 +13,8 @@ function runGame(string $name, array $gameData)
     $question = $gameData['question']; 
     if (is_array($question)) {
         $keys = implode(' ', $question);
-        line("Question:{$keys}", $keys);
+        echo 'массив';
+        line("Question:{$keys}", $question);
     } else {
         line("Question: %s", $question);
     } 
