@@ -24,7 +24,7 @@ function GameCalc()
 }
 function getAction()
 {
-    $actions = ['+', '-', '*', '/'];
+    $actions = ['+', '-', '*'];
     return $actions[array_rand($actions)];
 }
 
@@ -40,9 +40,6 @@ function calc(string $action, array $numbers)
             break;
         case '*':
             return $num1 * $num2;
-            break;
-        case '/':
-            return floor($num1 / $num2);
             break;
     }
 }
