@@ -17,14 +17,14 @@ use function cli\prompt;
 function runGame(string $name, array $gameData)
 {
     require_once __DIR__ . '/../vendor/autoload.php';
-    $question = $gameData['question']; 
+    $question = $gameData['question'];
     if (is_array($question)) {
         $keys = implode(' ', $question);
         echo 'массив';
         line("Question:{$keys}", $question);
     } else {
         line("Question: %s", $question);
-    } 
+    }
     $answer = prompt('Your answer');
     if ($answer === (string) $gameData['answer']) {
         line("Correct!");
@@ -34,4 +34,3 @@ function runGame(string $name, array $gameData)
         exit();
     };
 }
-
