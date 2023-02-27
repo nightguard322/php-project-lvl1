@@ -14,6 +14,8 @@ function runGame(string $name, array $gameData)
     if (is_array($question)) {
         $keys = implode(' ', $question);
         line("Question:{$keys}", $keys);
+    } else {
+        line("Question:{$question}");
     }
     $answer = prompt('Your answer');
     if ($answer === (string) $gameData['answer']) {
