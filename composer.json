@@ -2,6 +2,7 @@
     "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
+        "bin/brain-gcd",
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-prime"
