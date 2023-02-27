@@ -8,7 +8,7 @@ use function cli\line;
 use function cli\prompt;
 
 /**
- * Запуск движка игр
+ * Запуск движка всех игр
  *
  * @param  mixed $name - имя игрока
  * @param  mixed $gameData - данные для игры
