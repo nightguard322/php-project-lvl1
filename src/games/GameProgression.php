@@ -2,11 +2,8 @@
 
 namespace BrainGames\Games\GameProgression;
 
-use LengthException;
-
 use function BrainGames\Cli\makeHello;
 use function cli\line;
-use function cli\prompt;
 use function BrainGames\Engine\runGame;
 
 function GameProgression()
@@ -19,7 +16,7 @@ function GameProgression()
     $name = makeHello();
     line('What number is missing in the progression?');
     for ($i = 0; $i < 3; $i++) {
-        $gameData = getQuestion(getNumber());
+        $gameData = getQuestion();
         runGame($name, $gameData);
     }
     line("Congratulations, %s!", $name);
