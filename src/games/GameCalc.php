@@ -34,13 +34,10 @@ function calc(string $action, array $numbers)
     switch ($action) {
         case '+':
             return $num1 + $num2;
-            break;
         case '-':
             return $num1 - $num2;
-            break;
         case '*':
             return $num1 * $num2;
-            break;
     }
 }
 function getNumber(): int

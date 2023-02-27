@@ -30,7 +30,7 @@ function getNumber(): int
     return mt_rand(0, 99);
 }
 
-function makeProgression($data)
+function makeProgression()
 {
     $start = getNumber();
     $diff = mt_rand(1, 10);
